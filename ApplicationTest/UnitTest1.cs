@@ -7,7 +7,7 @@ public class UnitTest1
     public void isThisALeapYearWith4()
     {
         // Arrange
-        leapYear l = new leapYear();
+        LeapYear l = new LeapYear();
 
         // Act
         var result4 = l.IsLeapYear(1604);
@@ -20,7 +20,7 @@ public class UnitTest1
     public void isThisALeapYearWith100()
     {
         // Arrange
-        leapYear l = new leapYear();
+        LeapYear l = new LeapYear();
 
         // Act
         var result100 = l.IsLeapYear(100);
@@ -33,7 +33,7 @@ public class UnitTest1
     public void isThisALeapYearWith400()
     {
         // Arrange
-        leapYear l = new leapYear();
+        LeapYear l = new LeapYear();
 
         // Act
         var result100 = l.IsLeapYear(400);

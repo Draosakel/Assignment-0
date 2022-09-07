@@ -1,8 +1,8 @@
 ﻿namespace Application;
 
-public class leapYear {
+public class Program {
     static void Main(string[] args) {
-        leapYear lyear = new leapYear();
+        LeapYear lyear = new LeapYear();
         Console.WriteLine("Enter desired year: ");
         int year = Convert.ToInt32(Console.ReadLine());
         if(lyear.IsLeapYear(year)) {
@@ -10,10 +10,5 @@ public class leapYear {
         } else {
             Console.WriteLine("Nay");
         }
-    }
-    public bool IsLeapYear(int year) {
-        if(year % 100 == 0 && year % 400 != 0) return false;
-        if(year % 4 == 0) return true;
-        return false;
     }
 }

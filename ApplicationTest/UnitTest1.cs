@@ -23,7 +23,7 @@ public class UnitTest1
         LeapYear l = new LeapYear();
 
         // Act
-        var result100 = l.IsLeapYear(100);
+        var result100 = l.IsLeapYear(1700);
 
         // Assert
         Assert.AreEqual(false, result100);
@@ -36,9 +36,22 @@ public class UnitTest1
         LeapYear l = new LeapYear();
 
         // Act
-        var result100 = l.IsLeapYear(400);
+        var result100 = l.IsLeapYear(1600);
 
         // Assert
         Assert.AreEqual(true, result100);
     }
+
+    [TestMethod]
+    public void enterYearBefore1582Error()
+    {
+        // Arrange
+        LeapYear l = new LeapYear();
+
+        // Act
+        var result400 = l.IsLeapYear(400);
+
+        // Assert
+        Assert.AreEqual(false, result400);
+    }   
 }
